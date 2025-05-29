@@ -1,0 +1,150 @@
+{
+  "driver": {
+    "name": "Franco Colapinto",
+    "team": "BWT Alpine F1® Team",
+    "number": 43,
+    "currentPosition": 3,
+    "totalPoints": 186,
+    "podiums": 12,
+    "profileImage": "/placeholder.svg?height=400&width=400"
+  },
+  "nextRace": {
+    "name": "Monaco Grand Prix",
+    "circuit": "Circuit de Monaco",
+    "date": "2025-06-15T14:00:00Z",
+    "location": "Monaco",
+    "countryCode": "MC",
+    "circuitImage": "/placeholder.svg?height=200&width=300"
+  },
+  "lastRace": {
+    "name": "Spanish Grand Prix",
+    "circuit": "Circuit de Barcelona-Catalunya",
+    "date": "May 21, 2025",
+    "position": 3,
+    "time": "1:33:42.143",
+    "points": 15,
+    "fastestLap": false,
+    "gridPosition": 4,
+    "positionChange": 1,
+    "circuitImage": "/placeholder.svg?height=200&width=300"
+  },
+  "upcomingRaces": [
+    {
+      "id": 1,
+      "round": 6,
+      "name": "Monaco Grand Prix",
+      "circuit": "Circuit de Monaco",
+      "date": "June 15, 2025",
+      "time": "14:00 GMT",
+      "country": "Monaco",
+      "countryCode": "MC",
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 2,
+      "round": 7,
+      "name": "Canadian Grand Prix",
+      "circuit": "Circuit Gilles Villeneuve",
+      "date": "June 29, 2025",
+      "time": "18:00 GMT",
+      "country": "Canada",
+      "countryCode": "CA",
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 3,
+      "round": 8,
+      "name": "British Grand Prix",
+      "circuit": "Silverstone Circuit",
+      "date": "July 13, 2025",
+      "time": "15:00 GMT",
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 4,
+      "round": 9,
+      "name": "Hungarian Grand Prix",
+      "circuit": "Hungaroring",
+      "date": "July 27, 2025",
+      "time": "14:00 GMT",
+      "country": "Hungary",
+      "countryCode": "HU",
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    }
+  ],
+  "pastRaces": [
+    {
+      "id": 1,
+      "round": 5,
+      "name": "Spanish Grand Prix",
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "date": "May 21, 2025",
+      "position": 3,
+      "points": 15,
+      "gridPosition": 4,
+      "fastestLap": false,
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 2,
+      "round": 4,
+      "name": "Miami Grand Prix",
+      "circuit": "Miami International Autodrome",
+      "date": "May 7, 2025",
+      "position": 5,
+      "points": 10,
+      "gridPosition": 6,
+      "fastestLap": false,
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 3,
+      "round": 3,
+      "name": "Chinese Grand Prix",
+      "circuit": "Shanghai International Circuit",
+      "date": "April 23, 2025",
+      "position": 4,
+      "points": 12,
+      "gridPosition": 3,
+      "fastestLap": true,
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    },
+    {
+      "id": 4,
+      "round": 2,
+      "name": "Japanese Grand Prix",
+      "circuit": "Suzuka Circuit",
+      "date": "April 9, 2025",
+      "position": 2,
+      "points": 18,
+      "gridPosition": 5,
+      "fastestLap": false,
+      "circuitImage": "/placeholder.svg?height=200&width=300"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Colalpinto secures podium finish at Spanish Grand Prix",
+      "excerpt": "An impressive drive from P4 on the grid to secure a podium finish at the Circuit de Barcelona-Catalunya.",
+      "date": "May 22, 2025",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 2,
+      "title": "Alpine announces contract extension for Colalpinto",
+      "excerpt": "Alpine has confirmed a two-year contract extension, keeping Colalpinto on the grid until the end of 2027.",
+      "date": "May 15, 2025",
+      "image": "/placeholder.svg?height=400&width=600"
+    },
+    {
+      "id": 3,
+      "title": "New helmet design revealed for Monaco Grand Prix",
+      "excerpt": "Colalpinto unveils a special one-off helmet design for the upcoming Monaco Grand Prix.",
+      "date": "May 10, 2025",
+      "image": "/placeholder.svg?height=400&width=600"
+    }
+  ]
+}

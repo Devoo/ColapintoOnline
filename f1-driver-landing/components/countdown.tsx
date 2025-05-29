@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { Clock, MapPin } from "lucide-react"
+import Image from "next/image"
+import { getNextRace } from "@/lib/data"
 
 export function Countdown() {
   const [timeLeft, setTimeLeft] = useState({
@@ -11,10 +13,8 @@ export function Countdown() {
     seconds: 0,
   })
 
-  // Example next race date - replace with actual next race date
-  const nextRaceDate = new Date("2025-06-15T14:00:00Z")
-  const nextRaceLocation = "Monaco Grand Prix"
-  const nextRaceCircuit = "Circuit de Monaco"
+  const nextRace = getNextRace()
+  const nextRaceDate = new Date(nextRace.date)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -35,15 +35,20 @@ export function Countdown() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [])
+  }, [nextRaceDate])
 
   return (
     <div className="text-center">
+      <div className="relative h-24 w-full mb-4 rounded-lg overflow-hidden">
+        <Image src={nextRace.circuitImage || "/placeholder.svg"} alt={nextRace.circuit} fill className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+      </div>
+
       <div className="flex items-center justify-center gap-2 mb-4 text-gray-300">
         <MapPin className="h-5 w-5 text-pink-500" />
-        <span>{nextRaceLocation}</span>
+        <span>{nextRace.name}</span>
       </div>
-      <p className="text-sm text-gray-400 mb-6">{nextRaceCircuit}</p>
+      <p className="text-sm text-gray-400 mb-6">{nextRace.circuit}</p>
 
       <div className="grid grid-cols-4 gap-2 mb-6">
         <div className="bg-slate-800 rounded-lg p-3">
