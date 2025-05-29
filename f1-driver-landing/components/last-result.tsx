@@ -1,18 +1,9 @@
 import { Trophy, Clock, Flag } from "lucide-react"
+import Image from "next/image"
+import { getLastRace } from "@/lib/data"
 
 export function LastResult() {
-  // Example data - replace with actual last race data
-  const lastRace = {
-    name: "Spanish Grand Prix",
-    circuit: "Circuit de Barcelona-Catalunya",
-    date: "May 21, 2025",
-    position: 3,
-    time: "1:33:42.143",
-    points: 15,
-    fastestLap: false,
-    gridPosition: 4,
-    positionChange: 1,
-  }
+  const lastRace = getLastRace()
 
   return (
     <div className="bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-pink-500/20">
@@ -24,6 +15,17 @@ export function LastResult() {
       </div>
 
       <div className="p-6">
+        <div className="relative h-32 w-full mb-6 rounded-lg overflow-hidden">
+          <Image
+            src={lastRace.circuitImage || "/placeholder.svg"}
+            alt={lastRace.circuit}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+          <div className="absolute bottom-2 left-2 text-white font-semibold">{lastRace.circuit}</div>
+        </div>
+
         <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
           <div className="flex-1 flex justify-center">
             <div className="relative">
