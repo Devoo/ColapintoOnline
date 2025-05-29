@@ -27,6 +27,9 @@ jobs:
       with:      
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: ./f1-driver-landing/package-lock.json
-    - run: npm install
+    
+    - name: Clean npm cache
+      run: npm cache clean --force   
+    - name: Install dependencies with legacy peer deps    
+      run: npm install --legacy-peer-deps    
     - run: npm run build
